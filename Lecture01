@@ -1,0 +1,67 @@
+Everything in JS happens inside the execution context. Imagine a sealed-off container inside which JS runs. It is an abstract concept that hold info about the env. within the current code is being executed. Execution Context
+
+In the container the first component is memory component and the 2nd one is code component
+
+Memory component has all the variables and functions in key value pairs. It is also called Variable environment.
+
+Code component is the place where code is executed one line at a time. It is also called the Thread of Execution.
+
+JS is a synchronous, single-threaded language
+
+Synchronous:- In a specific synchronous order.
+Single-threaded:- One command at a time.
+1)what is mean by JavaScript?
+A) JavaScript is defined as the scripting language and also the object-oriented programming language where it is also a multi paradigm programming language. these means it supports the procedural and also the object-oriented programming language.
+Javascript programming language can also be used as the client side and server side programming language
+Javascript features: 
+the javascript is the one which is synchronous and single threaded language
+Synchronous means it executes the sequesnce of code line by line
+Single threaded language: this is the one which will do the first execution and all the operations should wait other operations.so it used only one single stack
+
+1)one of the most important feature in the javascript is the dynamic interactivity
+if we just add an event to the button clicks then automatically it updated and we don’t need any type of reloading a page that’s the reason javascript is the dynamic behaviour
+2)asynchronous programming:
+Javascript supports the asynchronous programm9ing thrugh the callbacks and promises and the javascript sends the data to server and however it will not freeze the user interface. Without freezing,javascript fetch the data from the server
+3)cross platform compatibility: this means the javascript can be run anywhere with the javascript engine and this can also used in the different operating systems 
+4)prototypal inheritance: this is the great feature which is included in the JavaScript which means this can easily inherit the properties and methods for the objects from the objects. Can be inherited from the objects to the objects
+5)extensive libraries: these javascript have several libraries like vue.js,reactjs and angularjs
+Applications of javascript:
+1)web development: the javascript is the backbone of the web development and this can be usually used to add the dynamic content to the web page
+2)Iot applications: the javascript of the server side like nodejs act as like a server and this can also be used for running the server smoothly.
+3)mobile development: javascript also provides the library which is called as the react native which can also build the mobile appications
+4) server side development:this is the one which can also be used on the server side an can build an run the apps
+5)game development:we can also use the javascript library called as the three.js which makes user interface more userfriendly
+Execution process of javascript:
+In this we every browser has the javascript engine
+In google chrome, we have the v8 engine 
+Client side execution of javascript:
+The client side can be execute with the help of the jaavscript engine which is present in the browser
+1)here, the browser have the javascript engine provides an environment which is called as the execution context.
+Execution context :
+During the Execution Context run-time, the specific code gets parsed by a parser, the variables and functions are stored in memory, executable byte-code gets generated, and the code gets executed.(important)
+2)in execution context these are the different types involves:
+global execution context and function execution context: 
+The creation of an Execution Context (GEC or FEC) happens in two phases:
+1.	Creation Phase
+2.	Execution Phase
+Creation Phase
+In the creation phase, the Execution Context is first associated with an Execution Context Object (ECO).
+
+
+1.	Creation of the Variable Object (VO)
+2.	Creation of the Scope Chain
+3.	Setting the value of the this keyword
+Execution phase:
+At this stage, the JavaScript engine reads the code in the current Execution Context once more, then updates the VO with the actual values of these variables. Then the code is parsed by a parser, gets transpired to executable byte code, and finally gets executed.
+GLOBAL EXECUTION CONTEXT	Function Execution Context
+Creates a Global Variable object that stores function and variables declarations.	Doesn't create a Global Variable object. Rather, it creates an argument object that stores all the arguments passed to the function.
+Creates the `this` object that stores all the variables and functions in the Global scope as methods and properties.	Doesn't create the `this` object, but has access to that of the environment in which it is defined. Usually the `window` object.
+Can't access the code of the Function contexts defined in it	Due to scoping, has access to the code(variables and functions) in the context it is defined and that of its parents
+Sets up memory space for variables and functions defined globally	Sets up memory space only for variables and functions defined within the function.
+
+In the execution context there are two components:
+First is the memory component
+Second is the code component
+1)in the memory component the variables and the functions are declared as the key value pairs and this also called as the variable environment
+2)in the code component, all the code is executed line by line and this can also called as the thread of execution
+
