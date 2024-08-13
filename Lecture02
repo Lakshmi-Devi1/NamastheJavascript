@@ -41,6 +41,7 @@ The main feature of the var is that it is hoisted and function specific..and the
 2)let:let is where it is not hoisted and also it is block spefic
 Let cannot be redcalred again and again in the same specific block
 3)const:it is immutable and also once assigned it is constant and cannot be changed
+
                                           Data types in the javascript:
 1)primitive data types:string,numbers etc
 2)non primitive data types :objects,arrays
