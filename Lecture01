@@ -49,6 +49,7 @@ In the creation phase, the Execution Context is first associated with an Executi
 1.	Creation of the Variable Object (VO)
 2.	Creation of the Scope Chain
 3.	Setting the value of the this keyword
+
 Execution phase:
 At this stage, the JavaScript engine reads the code in the current Execution Context once more, then updates the VO with the actual values of these variables. Then the code is parsed by a parser, gets transpired to executable byte code, and finally gets executed.
 GLOBAL EXECUTION CONTEXT	Function Execution Context
