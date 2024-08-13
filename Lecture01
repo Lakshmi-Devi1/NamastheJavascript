@@ -46,8 +46,6 @@ The creation of an Execution Context (GEC or FEC) happens in two phases:
 2.	Execution Phase
 Creation Phase
 In the creation phase, the Execution Context is first associated with an Execution Context Object (ECO).
-
-
 1.	Creation of the Variable Object (VO)
 2.	Creation of the Scope Chain
 3.	Setting the value of the this keyword
@@ -55,7 +53,8 @@ Execution phase:
 At this stage, the JavaScript engine reads the code in the current Execution Context once more, then updates the VO with the actual values of these variables. Then the code is parsed by a parser, gets transpired to executable byte code, and finally gets executed.
 GLOBAL EXECUTION CONTEXT	Function Execution Context
 Creates a Global Variable object that stores function and variables declarations.	Doesn't create a Global Variable object. Rather, it creates an argument object that stores all the arguments passed to the function.
-Creates the `this` object that stores all the variables and functions in the Global scope as methods and properties.	Doesn't create the `this` object, but has access to that of the environment in which it is defined. Usually the `window` object.
+Creates the `this` object that stores all the variables and functions in the Global scope as methods and properties.	Doesn't create the `this` object, but has access to that of the environment in which it is defined. 
+Usually the `window` object.
 Can't access the code of the Function contexts defined in it	Due to scoping, has access to the code(variables and functions) in the context it is defined and that of its parents
 Sets up memory space for variables and functions defined globally	Sets up memory space only for variables and functions defined within the function.
 
